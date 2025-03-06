@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.9) url(/image/bgimage.avif);
+    background-blend-mode: darken;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.main-container {
+    border: 2px solid rgba(211, 211, 211, 0.3);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.557), rgba(128, 128, 128, 0.817));
+    padding: 20px;
+    min-height: 400px;
+    max-height: fit-content;
+    width: 50vw;
+    max-width: 300px;
+    border-radius: 20px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.city-input {
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background: rgba(0, 0, 0, 0.249);
+    outline: none;
+    font-weight: 500;
+    transition: 0.25s;
+    padding-right: 40px;
+    color: wheat;
+}
+
+.city-input::placeholder {
+    color: rgba(245, 222, 179, 0.311);
+}
+
+.city-input:focus {
+    border: 1px solid lightgray;
+}
+
+.search-btn {
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgba(245, 222, 179, 0.311);
+    transition: 0.25s;
+}
+
+
+/* ***************section************* */
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.location-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.regulrt-txt {
+    font-size: 600;
+}
+
+.weather-summary-container img {
+    width: 60%;
+    height: 150px;
+}
+
+.weather-summary-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-summary-inner {
+    text-align: end;
+}
+
+.weather-conditions-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+}
+
+.condition-item {
+    display: flex;
+    gap: 6px;
+}
+
+.condition-item i {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.temp-txt{
+    padding: 10px 0;
+    font-size: 1.5rem;
+}
+
+.weather-container-box .wind-container{
+    display: flex;
+}
+.wind-container i{
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* ************************* section-message ********** */
+.section-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-message div h1 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.section-message div h4 {
+    text-align: center;
+}
+
+.section-message img {
+    width: 80%;
+    color: wheat;
+}
+
+
+@media screen and (max-width:500px) {
+    .main-container{
+        min-width: 90vw;
+    }
+    .section-message{
+        font-size: 0.8rem;
+    }
+}
