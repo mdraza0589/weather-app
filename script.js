@@ -35,22 +35,22 @@ async function getfetchData(endPoint, city) {
 function getWeatherImage(condition){
     condition = condition.toLowerCase();
     if(condition.includes("clear")){
-        return "/image/sunny.png";
+        return "image/sunny.png";
     }
     else if(condition.includes("cloud")){
-        return "/image/cloud.png";
+        return "image/cloud.png";
     }
     else if(condition.includes("rain")){
-        return "/image/slowrain.png";
+        return "image/slowrain.png";
     }
     else if(condition.includes("snow")){
-        return "/image/snow.png";
+        return "image/snow.png";
     }
     else if(condition.includes("thunderstorm")){
-        return "/image/highrain.png";
+        return "image/highrain.png";
     }
     else {
-        return "/image/default.png"
+        return "image/default.png"
     }
 }
 
